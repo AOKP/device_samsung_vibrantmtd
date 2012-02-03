@@ -40,7 +40,8 @@ PRODUCT_COPY_FILES := \
 
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
-	device/samsung/vibrantmtd/aries-keypad.kl:system/usr/keylayout/aries-keypad.kl
+	device/samsung/vibrantmtd/aries-keypad.kl:system/usr/keylayout/aries-keypad.kl \
+	device/samsung/vibrantmtd/cypress-touchkey.kl:system/usr/keylayout/cypress-touchkey.kl
 
 # kernel modules
 PRODUCT_COPY_FILES += $(foreach module,\
