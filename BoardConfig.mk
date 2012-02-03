@@ -21,17 +21,12 @@
 BOARD_SECOND_CAMERA_DEVICE := /dev/video2
 
 #Prebuilt Kernel
-TARGET_PREBUILT_KERNEL := device/samsung/galaxysmtd/kernel
-
-# FM Radio
-BOARD_HAVE_FM_RADIO := true
-BOARD_GLOBAL_CFLAGS += -DHAVE_FM_RADIO
-BOARD_FM_DEVICE := si4709
+TARGET_PREBUILT_KERNEL := device/samsung/vibrantmtd/kernel
 
 # Recovery
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/galaxysmtd/recovery/recovery_keys.c
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/vibrantmtd/recovery/recovery_keys.c
 
-TARGET_OTA_ASSERT_DEVICE := galaxys,galaxysmtd,GT-I9000,GT-I9000M,GT-I9000T
+TARGET_OTA_ASSERT_DEVICE := vibrant,vibrantmtd,SGH-T959
 
 # Import the aries-common BoardConfigCommon.mk
 include device/samsung/aries-common/BoardConfigCommon.mk
