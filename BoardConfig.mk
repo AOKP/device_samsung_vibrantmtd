@@ -17,9 +17,6 @@
 # Product-specific compile-time definitions.
 #
 
-#Video Devices
-BOARD_SECOND_CAMERA_DEVICE := /dev/video2
-
 #Prebuilt Kernel
 TARGET_PREBUILT_KERNEL := device/samsung/vibrantmtd/kernel
 
