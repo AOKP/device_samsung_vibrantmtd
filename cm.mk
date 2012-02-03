@@ -1,4 +1,4 @@
-$(call inherit-product, device/samsung/galaxysmtd/full_vibrantmtd.mk)
+$(call inherit-product, device/samsung/vibrantmtd/full_vibrantmtd.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := Vibrant
