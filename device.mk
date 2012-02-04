@@ -38,6 +38,10 @@
 PRODUCT_COPY_FILES := \
 	device/samsung/vibrantmtd/asound.conf:system/etc/asound.conf
 
+# Init files
+PRODUCT_COPY_FILES += \
+	device/samsung/vibrantmtd/init.aries.rc:root/init.aries.rc
+
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
 	device/samsung/vibrantmtd/aries-keypad.kl:system/usr/keylayout/aries-keypad.kl \
