@@ -40,12 +40,16 @@ PRODUCT_COPY_FILES := \
 
 # Init files
 PRODUCT_COPY_FILES += \
-	device/samsung/vibrantmtd/init.aries.rc:root/init.aries.rc
+	device/samsung/vibrantmtd/init.target.rc:root/init.target.rc
 
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
 	device/samsung/vibrantmtd/aries-keypad.kl:system/usr/keylayout/aries-keypad.kl \
 	device/samsung/vibrantmtd/cypress-touchkey.kl:system/usr/keylayout/cypress-touchkey.kl
+
+# GPS
+PRODUCT_COPY_FILES += \
+	device/samsung/vibrantmtd/get-gps-lto:system/bin/get-gps-lto
 
 # kernel modules
 PRODUCT_COPY_FILES += $(foreach module,\
