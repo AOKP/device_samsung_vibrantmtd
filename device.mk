@@ -40,7 +40,7 @@ PRODUCT_COPY_FILES := \
 
 # Init files
 PRODUCT_COPY_FILES += \
-	device/samsung/vibrantmtd/init.target.rc:root/init.target.rc
+	device/samsung/vibrantmtd/init.aries.rc:root/init.aries.rc
 
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
