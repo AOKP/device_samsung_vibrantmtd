@@ -40,30 +40,12 @@ PRODUCT_COPY_FILES := \
 
 # Init files
 PRODUCT_COPY_FILES += \
-	device/samsung/vibrantmtd/init.aries.rc:root/init.aries.rc
+	device/samsung/vibrantmtd/init.aries.gps.rc:root/init.aries.gps.rc
 
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
 	device/samsung/vibrantmtd/aries-keypad.kl:system/usr/keylayout/aries-keypad.kl \
 	device/samsung/vibrantmtd/cypress-touchkey.kl:system/usr/keylayout/cypress-touchkey.kl
-
-# GPS
-PRODUCT_COPY_FILES += \
-	device/samsung/vibrantmtd/get-gps-lto:system/bin/get-gps-lto
-
-# kernel modules
-PRODUCT_COPY_FILES += $(foreach module,\
-	$(wildcard device/samsung/vibrantmtd/*.ko),\
-	$(module):system/lib/modules/$(notdir $(module)))
-
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-    LOCAL_KERNEL := device/samsung/vibrantmtd/kernel
-else
-    LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
 
 # Inherit Aries common device configuration.
 $(call inherit-product, device/samsung/aries-common/device_base.mk)
