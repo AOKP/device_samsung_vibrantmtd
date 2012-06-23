@@ -6,3 +6,9 @@ rild.libpath=/system/lib/libsec-ril.so
 rild.libargs=-d /dev/ttyS0
 ro.sf.lcd_density=240
 
+# hardware info
+ro.device.cpu=1GHz Samsung-Intrinsity S5PC110
+ro.device.gpu=PowerVR SGX 540
+ro.device.rear_cam=5 MP
+ro.device.front_cam=N/A
+ro.device.screen_res=480x800
